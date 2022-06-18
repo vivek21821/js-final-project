@@ -1,0 +1,114 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+}
+.mainsec {
+  padding: 2% 8%;
+  display: flex;
+  justify-content: space-around;
+}
+h2 {
+  font-size: 36px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.sectionouter > h2,
+.sectionouter > h4 {
+  margin-left: 14.5%;
+}
+h4 {
+  font-size: 18px;
+}
+
+.leftsec {
+  width: 50%;
+}
+
+.leftsec .checkoutbox {
+  display: flex;
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px #ccc;
+  border-radius: 5px;
+  background-color: white;
+  max-width: 600px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.leftsec .checkoutbox img {
+  width: 80px;
+  min-width: 80px;
+  border-radius: 5px;
+  margin-right: 16px;
+}
+
+.checkoutbox h4 {
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.rightsec {
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px #ccc;
+  border-radius: 5px;
+  padding: 16px;
+}
+.cartempty {
+  margin: 200px 0 150px;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 40px;
+  margin-left: 0px !important;
+}
+.placeorderbtnouter {
+  margin-top: 35px;
+}
+#placeorderbtn {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  padding: 10px 20px;
+  letter-spacing: 2px;
+  background-color: #009688;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgb(0, 0, 0, 0.5);
+  border: 2px solid transparent;
+  transition: 0.2s ease-in;
+}
+#placeorderbtn:hover {
+  color: #009688;
+  border-color: #009688;
+  background-color: #fff;
+  box-shadow: none;
+}
+@media (max-width: 480px) {
+  .mainsec {
+    flex-direction: column;
+  }
+  .leftsec {
+    width: 100%;
+  }
+  .sectionouter > h2,
+  .sectionouter > h4 {
+    margin-left: 40px;
+  }
+  .sectionouter > h2 {
+    margin-top: 120px;
+  }
+  .sectionouter > h4 {
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,25 @@
+
+.center {
+    text-align: center;
+  }
+  h1 {
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  p {
+    font-weight: 400;
+  }
+  .fa-check {
+    font-size: 90px;
+    background-color: #42ba96;
+    border-radius: 100%;
+    padding: 80px;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+  @media (max-width: 480px) {
+    .center {
+      margin-top: 150px;
+    }
+  }
+  

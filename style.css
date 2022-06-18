@@ -1,0 +1,159 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+}
+.clothingcontainer,
+.accessoriescontainer {
+  display: flex;
+  justify-content: center;
+  padding: 0 4%;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 15%;
+  min-width: 200px;
+  height: auto;
+  margin: 30px 10px;
+  cursor: pointer;
+  background-color: #fff;
+  /* box-shadow: 0 2px 10px rgb(0 0 0 / 0.3); */
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.2s ease;
+  box-shadow: 0 0px 7px rgba(0, 0, 0, 0.2);
+}
+.box:hover {
+  border: none;
+  transform: scale(1.02);
+}
+.box img {
+  width: 100%;
+}
+.box .productdesc {
+  padding: 20px 10px 10px;
+  transition: 0.2s ease-in;
+  margin-top: -10px;
+}
+
+h2 {
+  margin-top: 100px;
+  margin-left: 70px;
+  color: #1b1919;
+}
+h3 {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: #1b1919;
+}
+h5 {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 12px;
+  color: #6e6e6e;
+}
+h6 {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: #009688;
+}
+
+@media (min-width: 701px) {
+  .clothingcontainer,
+  .accessoriescontainer {
+    justify-content: space-between;
+    padding: 0px 15px;
+  }
+  .clothingcontainer,
+  .accessoriescontainer {
+    display: flex;
+    justify-content: center;
+    padding: 0 4%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    margin: 60px 15px 0px;
+  }
+  .clothingcontainer,
+  .accessoriescontainer {
+    justify-content: space-between;
+    padding: 0px 15px;
+  }
+  .box {
+    min-width: 47%;
+    margin: 15px 0px 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  h2,
+  h3,
+  h5,
+  h6 {
+    font-size: 100%;
+  }
+  .box {
+    min-width: 100%;
+    margin: 15px 0px 10px;
+  }
+}
+
+/* slider */
+.slick-slide {
+  width: 100%;
+  margin: 0 80px;
+}
+
+.slick-dots {
+  list-style-type: none;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.slick-dots li {
+  display: inline-block;
+}
+
+.slick-dots button {
+  display: inline-block;
+  font-size: 0px;
+  color: #ccc;
+  background-color: #ccc;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 0;
+  margin-left: 6px;
+  margin-right: 6px;
+  outline: none;
+  cursor: pointer;
+}
+
+.slick-active button {
+  background-color: #aaa;
+}
+
+@media (max-width: 480px) {
+  .slick-slide {
+    margin: 0px;
+  }
+}
